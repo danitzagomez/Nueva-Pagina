@@ -1,26 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,300&display=swap');
 
+header{
+    width: 100%;
+    height: 100px;
+    background: #bdc3c7;
+    background: -webkit-linear-gradient(to bottom, rgba(44, 62, 80, 0.6), rgba(189, 195, 199, 0.6)), url("../img/fondo.png");
+    background: linear-gradient(to bottom, rgba(44, 62, 80, 0.6), rgba(189, 195, 199, 0.6)), url("../img/fondo.png");
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
 body{
     overflow-x: hidden;
+    font-size: 20px;
+}
+.nav {
+    justify-content: center;
+    display: flex;
+}
+.nav-link:focus, .nav-link:hover {
+    color: #ffffff;
+}
+.nav-link {
+    display: block;
+    color: #ffffff;
+    text-decoration: #6f42c1;
+    background: 0 0;
+    border: 0;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
 .carousel-inner{
     max-height: 39rem;
 }
 h1{
-    color: #6f42c1;
+    color: #95109a;
 }
 h4{
     color: #1a1d20;
 }
+h2{
+    text-align: center;
+}
+
 .galeria-port{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 .imagen-port{
-    width: 24%;
+    width: 300px;
     margin-bottom: 10px;
-    height: 200px;
+    height: 300px;
     overflow: hidden;
     position: relative;
     cursor: pointer;
@@ -52,4 +83,54 @@ h4{
     transform: scale(1);
 
 }
-
+.tarjetas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card{
+    width: 100%;
+    margin: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 1000ms ease;
+    justify-content: center;
+    align-items: center;
+}
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
+footer{
+width: 100%;
+height: 200px;
+background: #bdc3c7;
+background: -webkit-linear-gradient(to bottom, rgba(44, 62, 80, 0.6), rgba(189, 195, 199, 0.6)), url("../img/fondo.png");
+background: linear-gradient(to bottom, rgba(44, 62, 80, 0.6), rgba(189, 195, 199, 0.6)), url("../img/fondo.png");
+background-size: cover;
+background-attachment: fixed;
+position: relative;
+}
+.contenedor-footer{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin:auto;
+    padding-bottom: 50px;
+}
+.content-foo{
+    text-align: center;
+}
+.content-foo >h4{
+    color: white;
+    border-bottom: 3px solid #6f42c1;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.content-foo >p{
+    color: white;
+}

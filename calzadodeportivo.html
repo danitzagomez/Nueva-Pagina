@@ -1,110 +1,181 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Boutique Ambar</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,300&display=swap"
-        rel="stylesheet">
-
+    <meta charset="UTF-8">
+    <title>Boutique Ambar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,300&display=swap"
+          rel="stylesheet">
 </head>
 <body>
-<header class="container-fluid bg-primary d-flex justify-content-center">
-  <p class="text-light mb-0 p-2 fs-6">Boutique Ambar</p>
-</header>
-<ul class="nav nav-tabs">
-  <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-  </li>
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Categorias</a>
-    <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="assets/calzadodeportivo.html">Calzado Deportivo</a></li>
-      <li><a class="dropdown-item" href="assets/ropa.html">Ropa</a></li>
-      <li><a class="dropdown-item" href="joyas.html">Joyas</a></li>
-      <li>
-        <hr class="dropdown-divider">
-      </li>
-      <li><a class="dropdown-item" href="#">Separated link</a></li>
+<header class="container-fluid bg-primary">
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="ropa.html">Vestuario</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="calzadodeportivo.html">Calzado</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="joyas.html">Joyas</a>
+        </li>
     </ul>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="a">Contacto</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-  </li>
-</ul>
+</header>
+<section class="texto-header">
+    <h2>Boutique Ambar</h2>
+</section>
 <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="3000">
-      <img src="assets/img/Zapatillas%20deportivas.jpg" class="d-block w-100" alt="...">
+    <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3000">
+            <img src="assets/img/Zapatillas%20deportivas.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+            <img src="assets/img/Joyas.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+            <img src="assets/img/Jeans%20mujer.jpg" class="d-block w-100" alt="...">
+        </div>
     </div>
-    <div class="carousel-item" data-bs-interval="3000">
-      <img src="assets/img/Joyas.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item" data-bs-interval="3000">
-      <img src="assets/img/Jeans%20mujer.jpg" class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
 </div>
 <section class="w-50 mx-auto text-center pt-5" id="intro">
-  <h1 class="p-3 fs-2 text-uppercase border-top border-3">Mi emprendimiento es pequeño, pero tu recomendación y apoyo
-    lo hace grande.</h1>
-  <h4 class="p-3 fs-4 border-top border-3">Aqui encontraras calzado para dama y varon, ropa para dama y joyas de plata
-    fina</h4>
+    <h1 class="p-3 fs-2 text-uppercase border-top border-3">Mi emprendimiento es pequeño, pero tu recomendación y apoyo
+        lo hace grande.</h1>
+    <h4 class="p-3 fs-4 border-top border-3">En esta pagina podras encontrar variedad de productos, tanto en calzado,
+        vestimenta y joyas. Los mejores productos  en calidad y precio a su gusto y elección</h4>
 </section>
+<section class="w-50 mx-auto text-center pt-5">
+    <h1 class="p-3 fs-2 text-uppercase border-top border-3">Calzado Dama</h1>
 </section>
 <section class="Categorias">
-  <div class="container">
-    <h2 class="Titulo ">Nuestras Categorias</h2>
-    <div class="galeria-port">
-      <div class="imagen-port">
-        <img src="assets/img/Botines.jpg">
-        <div class="hover-galeria">
-          <img src="assets/img/Botines%20Mujer.jpg">
+    <div class="container">
+        <div class="galeria-port">
+            <div class="imagen-port">
+                <img src="assets/img/Botin%20morado%20mujer.jpg">
+                <div class="hover-galeria">
+                    <img src="assets/img/Bototos%20Morado%20mj.jpg">
+                </div>
+            </div>
+            <div class="imagen-port">
+                <img src="assets/img/zapatillas%20dp%20mj.jpg">
+                <div class="hover-galeria">
+                    <img src="assets/img/zapatillas%20deportivas%20mujer.jpg">
+                </div>
+            </div>
+            <div class="imagen-port">
+                <img src="assets/img/Bototos%20Mujer%20cafe%20y%20celeste.jpg">
+                <div class="hover-galeria">
+                    <img src="assets/img/Bototos%20Mujer%20cafe%20.jpg">
+                </div>
+            </div>
+            <div class="imagen-port">
+                <img src="assets/img/Zapatillas%20mujer%20Blancas.jpg">
+                <div class="hover-galeria">
+                    <img src="assets/img/zapatillas%20casuales%20mujer.jpg">
+                </div>
+            </div>
+            <div class="imagen-port">
+                <img src="assets/img/Zapatillas%20casual%20mujer%20blanco%20rosado.jpg">
+                <div class="hover-galeria">
+                    <img src="assets/img/zapatillas%20blanco%20y%20rosa.jpg">
+                </div>
+            </div>
+            <div class="imagen-port">
+                <img src="assets/img/Zapatillas%20dep%20mj%20ng.jpg">
+                <div class="hover-galeria">
+                    <img src="assets/img/zapatillas%20deportivas%20mujer.jpg">
+                </div>
+            </div>
+            <div class="imagen-port">
+                <img src="assets/img/Botas%20de%20casa%20Mujer.jpg">
+                <div class="hover-galeria">
+                    <img src="assets/img/Botas%20de%20casa%20ng.jpg">
+                </div>
+            </div>
+            <div class="imagen-port">
+                <img src="assets/img/Botines%20negro%20mj.jpg">
+                <div class="hover-galeria">
+                    <img src="assets/img/Botines%20ng%20mj.jpg">
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="imagen-port">
-        <img src="assets/img/Bototos%20Hombre.png">
-        <div class="hover-galeria">
-          <img src="assets/img/Bototos%20Hombre.jpg">
-        </div>
-      </div>
-      <div class="imagen-port">
-        <img src="assets/img/Buzo%20Mujer.png">
-        <div class="hover-galeria">
-          <img src="assets/img/Buzo%20Mujer.jpg">
-        </div>
-      </div>
-      <div class="imagen-port">
-        <img src="assets/img/Chaleco.jpeg">
-        <div class="hover-galeria">
-          <img src="assets/img/Chaleco%20mujer.jpg">
-        </div>
-      </div>
-      <div class="imagen-port">
-        <img src="assets/img/Chaleco.jpeg">
-        <div class="hover-galeria">
-          <img src="assets/img/Chaleco%20mujer.jpg">
-        </div>
-      </div>
     </div>
-  </div>
-  </div>
+    </div>
 </section>
-t
+<section class="w-50 mx-auto text-center pt-5">
+    <h1 class="p-3 fs-2 text-uppercase border-top border-3">Calzado Varón</h1>
+</section>
+<section class="Categorias">
+    <div class="container">
+        <div class="galeria-port">
+            <div class="imagen-port">
+                <img src="assets/img/Bototos%20Hombre.png">
+                <div class="hover-galeria">
+                    <img src="assets/img/Bototos%20Hombre.jpg">
+                </div>
+            </div>
+            <div class="imagen-port">
+                <img src="assets/img/Bototos%20azul%20Hombre.jpg">
+                <div class="hover-galeria">
+                    <img src="assets/img/Bototos%20azul%20hm.jpg">
+                </div>
+            </div>
+            <div class="imagen-port">
+                <img src="assets/img/Zapatillas%20Deportivas%20Hombre.jpeg">
+                <div class="hover-galeria">
+                    <img src="assets/img/Zapatillas%20dep%20hm%20gris.jpg">
+                </div>
+            </div>
+            <div class="imagen-port">
+                <img src="assets/img/Zapatilla%20Deportivas%20Hombre.jpeg">
+                <div class="hover-galeria">
+                    <img src="assets/img/Zapatillas%20dep%20hm%20gris.jpg">
+                </div>
+            </div>
+            <div class="imagen-port">
+                <img src="assets/img/Zapatillas%20Deportivas%20%20img%20pequeña.jpg">
+                <div class="hover-galeria">
+                    <img src="assets/img/Zapatillas%20dep%20hm%20gris.jpg">
+                </div>
+            </div>
+
+<footer>
+    <div class="contenedor-footer">
+        <div class="content-foo">
+            <h4>Teléfono</h4>
+            <p>+56 965419823</p>
+        </div>
+        <div class="content-foo">
+            <h4>Correo</h4>
+            <p>Boutique_Ambar@gmail.com</p>
+        </div>
+        <div class="content-foo">
+            <h4>Instagram</h4>
+            <p>Boutique_Ambar</p>
+        </div>
+        <div class="content-foo">
+            <h4>Facebook</h4>
+            <p>Boutique_Ambar</p>
+        </div>
+        <div class="content-foo">
+            <h4>Ubicación</h4>
+            <p>Castro, Chiloé</p>
+        </div>
+    </div>
+</footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
